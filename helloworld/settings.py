@@ -25,13 +25,12 @@ SECRET_KEY = 'django-insecure-+(z(sp#1_6@s1pcy_5(0#szu4#3n9b8clwo!dyu5-ngpmp7txi
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app','localhost']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'example',
     'hello',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -69,18 +68,14 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'helloworld.wsgi.application'
-WSGI_APPLICATION = 'api.wsgi.app'
+WSGI_APPLICATION = 'helloworld.wsgi.app'
+
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+DATABASES = {}
+
 
 
 # Password validation
