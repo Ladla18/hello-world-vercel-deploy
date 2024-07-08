@@ -1,3 +1,7 @@
 [build]
   command = "bash setup.sh && pip install -r requirements.txt"
   publish = "public"
+
+[build.environment]
+  MYSQLCLIENT_CFLAGS = "/usr/include/mysql"
+  MYSQLCLIENT_LDFLAGS = "-L/usr/lib/x86_64-linux-gnu -lmysqlclient"
