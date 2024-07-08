@@ -1,1 +1,2 @@
-sudo apt-get update && sudo apt-get install -y libmysqlclient-dev
+#!/bin/bash
+apt-get update && apt-get install -y libmysqlclient-dev
